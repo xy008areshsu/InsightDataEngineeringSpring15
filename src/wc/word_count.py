@@ -16,6 +16,9 @@ for line in sys.stdin:
     for w in words:
         for c in string.punctuation:
             w = w.replace(c, '')
+        w = w.strip()
+        if w == '':
+        	continue
         if w in wc_count:
             wc_count[w] += 1
         else:

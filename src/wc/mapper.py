@@ -14,6 +14,9 @@ for line in sys.stdin:
     for w in words:
         for c in string.punctuation:
             w = w.replace(c, '')
+        w = w.strip()
+        if w == '':
+        	continue
         print('{0}\t{1}'.format(w, 1))
 
 
