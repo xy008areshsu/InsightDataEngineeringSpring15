@@ -7,17 +7,17 @@ For word count, I used both local machine and hadoop mapreduce, because I think 
 
 For running median, I only used local machine for the implementation, since the update of the running median depends highly on the previous file lines, and they should happen sequentially.
 
-# To Run using Hadoop Mapreduce and the Local Machine
+### To Run using Hadoop Mapreduce and the Local Machine
 
 I used Cloudera CDH 4.1.1, which is a VM used in a similar Udacity training course. This VM has already installed all of the necessary parts. 
 
-	*	Use Virtualbox to load the VM provided, see details: https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/edit
+	*	Use Virtualbox to load the VM provided, since Github doesn't allow files larger than 100Mb, see details for instructions: https://docs.google.com/document/d/1v0zGBZ6EHap-Smsr3x3sGGpDW-54m82kDpPKC2M6uiY/edit
 
 	*	Inside the VM, run run.sh script by entering ./run.sh, this would use the normal inputs as the input data.
 
 	*	Inside the VM, to run with large input data, enter ./run_user_inputs.sh, and it will prompt the user which input folder to test, then enter large_inputs
 
-# To Run using Local Machine Only
+### To Run using Local Machine Only
 
 	*	This can be done with whatever Linux system.
 
@@ -27,7 +27,7 @@ I used Cloudera CDH 4.1.1, which is a VM used in a similar Udacity training cour
 
 All of the output files are saved in the outputs folder.
 
-## Algorithm for Running Median
+### Algorithm for Running Median
 
 Create a minHeap and a maxHeap, note that Python's heapq library only supports min heap, so in maxHeap a minus sign needs to be added for each element in order to maintain the invariants.
 
@@ -51,6 +51,6 @@ Then at any given time you can calculate median like this:
    Else
      median = root of the heap with more elements
 
-## Reference: http://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-of-integers
+### Reference: http://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-of-integers
 
 
