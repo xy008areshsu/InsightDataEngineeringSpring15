@@ -33,7 +33,7 @@ I used Cloudera CDH 4.1.1, which is a VM used in a similar Udacity training cour
 
 	* 	Then it will run the python code.
 
-All of the output files are saved in the outputs folder.
+All of the output files are saved in the outputs folder. Note that for something like "1.2.3", "VI", etc., the programs treat them as normal words.
 
 ### Algorithm for Running Median
 
