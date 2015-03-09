@@ -25,6 +25,14 @@ I used Cloudera CDH 4.1.1, which is a VM used in a similar Udacity training cour
 
 	*	Or Enter ./run_local_only_user_inputs.sh, this will allow the user to choose their own input folder.
 
+### Running Median for Multiple Files
+
+	*	All of the bash scripts have implemented this feature. 
+
+	*	It will first append all of the input files in sorted order into a single file
+
+	* 	Then it will run the python code.
+
 All of the output files are saved in the outputs folder.
 
 ### Algorithm for Running Median
